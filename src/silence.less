@@ -1,5 +1,5 @@
-// @import "./themes/default.less";
-@import "./themes/goddess.less";
+@import "./themes/default.less";
+// @import "./themes/goddess.less";
 // @import "./themes/dark.less";
 
 body {
@@ -331,7 +331,7 @@ a {
 .day .postTitle,
 .entrylist .entrylistPosttitle {
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 500;
     font-family: inherit;
     padding-left: 0;
     border-bottom: none;
@@ -402,8 +402,9 @@ a {
 .post {
     .postTitle {
         font-size: 20px !important;
-        font-weight: 300 !important;
+        font-weight: 500 !important;
         padding-left: 15px !important;
+        text-align: center !important;
         border-bottom: none !important;
 
         a {
@@ -1524,8 +1525,24 @@ a {
 
     #sideBar,
     .postDesc,
-    .esa-catalog {
+    .esa-catalog-title {
         display: none;
+    }
+
+    .esa-catalog-contents {
+        opacity: .95;
+    }
+    .esa-catalog-contents ul{
+        max-height: 150px;
+    }
+
+    .esa-catalog {
+        position: fixed;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        height: auto;
+        z-index: 888;
     }
 
     .postBody {

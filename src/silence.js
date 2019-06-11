@@ -83,19 +83,14 @@
             this.buildGithubCorner();
             this.buildCopyright();
             this.buildBloggerProfile();
-            if (this.isPostPage) {
-                this.goIntoReadingMode();
-                this.buildPostCatalog();
-                this.buildPostCodeCopyBtns();
-                this.buildPostSignature();
-                this.buildPostFavoriteBtn();
-                this.buildPostRewardBtn();
-                this.buildToolbar();
-                this.buildPostCommentAvatars();
-            } else {
-                this.goIntoNormalMode();
-
-            }
+            /*阅读模式有些问题,这里disable了*/
+            this.buildPostCatalog();
+            this.buildPostCodeCopyBtns();
+            this.buildPostSignature();
+            this.buildPostFavoriteBtn();
+            this.buildPostRewardBtn();
+            this.buildToolbar();
+            this.buildPostCommentAvatars();
         }
 
         /**
