@@ -389,9 +389,13 @@
                 $tabContent.fadeIn();
 
                 $('.esa-anchor-link').on('click', function () {
-                    let position = $('#' + ($(this).prev('i').attr('class'))).offset().top;
+                    let position = $('#' + ($(this).prev('i').attr('class'))).offset().top - 70;
+                    let $win = $(window);
+                    if ($win.width() <= 767) {
+                        position = position - 160;
+                    }
                     $('html, body').animate({
-                        scrollTop: position
+                            scrollTop: position
                     }, 300);
                 });
 
